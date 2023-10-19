@@ -16,7 +16,7 @@ Because of the license of the datasets, we can only provide the CoNLL'03. You ca
 CoFiNER is composed of a training process consisting of 3 steps.
 
 ### Step 1: Training a fine-grained model
-In the first step, we traina fine-grained model with the low-resource fine-grained dataset. This model serves as an inconsistency filtering.
+In the first step, we train a fine-grained model with the low-resource fine-grained dataset. This model serves as an inconsistency filtering.
 ```bash
 python3 main.py --fine_dataset Few-NERD_100 --eval_data Few-NERD --test_data Few-NERD --epochs 30 --overwrite_output_dir  --overwrite_cache  --do_train --do_eval --do_predict --model_type roberta --model_name_or_path roberta-large --suffix roberta-large 
 ```
