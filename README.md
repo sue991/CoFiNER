@@ -1,6 +1,6 @@
 # Enhancing Low-resource Fine-grained Named Entity Recognition by Leveraging Coarse-grained Datasets
 
-This repository contains the code for the paper [Enhancing Low-resource Fine-grained Named Entity Recognition by Leveraging Coarse-grained Datasets](https://openreview.net/forum?id=nIp7wkMeMP)(To Be Updated), in EMNLP 2023.
+This repository contains the code for the paper [Enhancing Low-resource Fine-grained Named Entity Recognition by Leveraging Coarse-grained Datasets](https://arxiv.org/abs/2310.11715), in EMNLP 2023.
 
 ## Requirements
     pytorch==2.0.1
