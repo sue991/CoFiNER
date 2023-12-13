@@ -49,12 +49,23 @@ python3 main.py --fine_dataset Few-NERD_100 --coarse_datasets OntoNote --eval_da
 
 ## Citation(To Be Updated)
 ```LaTeX
-@inproceedings{
-anonymous2023enhancing,
-title={Enhancing Low-Resource Fine-Grained Named Entity Recognition by Leveraging Coarse-Grained Datasets},
-author={Anonymous},
-booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
-year={2023},
-url={https://openreview.net/forum?id=nIp7wkMeMP}
+@inproceedings{choe-etal-2023-exploring,
+    title = "Exploring the Impact of Corpus Diversity on Financial Pretrained Language Models",
+    author = "Choe, Jaeyoung  and
+      Noh, Keonwoong  and
+      Kim, Nayeon  and
+      Ahn, Seyun  and
+      Jung, Woohwan",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.138",
+    pages = "2101--2112",
+    abstract = "Over the past few years, various domain-specific pretrained language models (PLMs) have been proposed and have outperformed general-domain PLMs in specialized areas such as biomedical, scientific, and clinical domains. In addition, financial PLMs have been studied because of the high economic impact of financial data analysis. However, we found that financial PLMs were not pretrained on sufficiently diverse financial data. This lack of diverse training data leads to a subpar generalization performance, resulting in general-purpose PLMs, including BERT, often outperforming financial PLMs on many downstream tasks. To address this issue, we collected a broad range of financial corpus and trained the Financial Language Model (FiLM) on these diverse datasets. Our experimental results confirm that FiLM outperforms not only existing financial PLMs but also general domain PLMs. Furthermore, we provide empirical evidence that this improvement can be achieved even for unseen corpus groups.",
 }
 ```
