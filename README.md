@@ -48,24 +48,20 @@ python3 main.py --fine_dataset Few-NERD_100 --coarse_datasets OntoNote --eval_da
 
 
 ## Citation(To Be Updated)
-```LaTeX
-@inproceedings{choe-etal-2023-exploring,
-    title = "Exploring the Impact of Corpus Diversity on Financial Pretrained Language Models",
-    author = "Choe, Jaeyoung  and
-      Noh, Keonwoong  and
-      Kim, Nayeon  and
-      Ahn, Seyun  and
+@inproceedings{lee-etal-2023-enhancing,
+    title = "Enhancing Low-resource Fine-grained Named Entity Recognition by Leveraging Coarse-grained Datasets",
+    author = "Lee, Su  and
+      Oh, Seokjin  and
       Jung, Woohwan",
     editor = "Bouamor, Houda  and
       Pino, Juan  and
       Bali, Kalika",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
     month = dec,
     year = "2023",
     address = "Singapore",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.findings-emnlp.138",
-    pages = "2101--2112",
-    abstract = "Over the past few years, various domain-specific pretrained language models (PLMs) have been proposed and have outperformed general-domain PLMs in specialized areas such as biomedical, scientific, and clinical domains. In addition, financial PLMs have been studied because of the high economic impact of financial data analysis. However, we found that financial PLMs were not pretrained on sufficiently diverse financial data. This lack of diverse training data leads to a subpar generalization performance, resulting in general-purpose PLMs, including BERT, often outperforming financial PLMs on many downstream tasks. To address this issue, we collected a broad range of financial corpus and trained the Financial Language Model (FiLM) on these diverse datasets. Our experimental results confirm that FiLM outperforms not only existing financial PLMs but also general domain PLMs. Furthermore, we provide empirical evidence that this improvement can be achieved even for unseen corpus groups.",
+    url = "https://aclanthology.org/2023.emnlp-main.197",
+    pages = "3269--3279",
+    abstract = "Named Entity Recognition (NER) frequently suffers from the problem of insufficient labeled data, particularly in fine-grained NER scenarios. Although $K$-shot learning techniques can be applied, their performance tends to saturate when the number of annotations exceeds several tens of labels. To overcome this problem, we utilize existing coarse-grained datasets that offer a large number of annotations. A straightforward approach to address this problem is pre-finetuning, which employs coarse-grained data for representation learning. However, it cannot directly utilize the relationships between fine-grained and coarse-grained entities, although a fine-grained entity type is likely to be a subcategory of a coarse-grained entity type. We propose a fine-grained NER model with a Fine-to-Coarse(F2C) mapping matrix to leverage the hierarchical structure explicitly. In addition, we present an inconsistency filtering method to eliminate coarse-grained entities that are inconsistent with fine-grained entity types to avoid performance degradation. Our experimental results show that our method outperforms both $K$-shot learning and supervised learning methods when dealing with a small number of fine-grained annotations.",
 }
-```
